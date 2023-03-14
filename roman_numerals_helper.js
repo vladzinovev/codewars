@@ -93,6 +93,32 @@ console.log(toRoman(1990))
 console.log(toRoman(2008))
 console.log(toRoman(1005))
  
+function fromRoman(str) {
+    let count=0;
+    for(let i=0;i<str.length;i++){
+        if(str[i]=='M'){count+=1000;}
+        
+        if(str[i]=='C'&&str[i+1]=='M'){count+=900;i+=2}
+        if(str[i]=='C'&&str[i+1]=='D'){count+=400;i+=2}
+        if(str[i]=='D'){count+=500;}
+        if(str[i]=='C'){count+=100;}
+        
+        if(str[i]=='X'&&str[i+1]=='C'){count+=90;i+=2}
+        if(str[i]=='X'&&str[i+1]=='L'){count+=40;i+=2}
+        if(str[i]=='L'){count+=50;}
+        if(str[i]=='X'){count+=10;}
+        
+        if(str[i]=='I'&&str[i+1]=='X'){count+=9;i+=2}
+        if(str[i]=='I'&&str[i+1]=='V'){count+=4;i+=2}
+        if(str[i]=='V'){count+=5;}
+        if(str[i]=='I'){count+=1;}
+        
+    }
+    return count;
+}
+console.log(fromRoman('IV'))
+ 
+ 
  
  
  
