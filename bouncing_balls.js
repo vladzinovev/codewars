@@ -1,6 +1,6 @@
 //бросаме мячик с высоты h, с отскоком bounce, сколько раз мама на высоте window увидит мяч 
 function bouncingBall(h,  bounce,  window) {
-    if(h===0 || bounce<=0 || bounce===1 || window>h/2) return -1;
+    if(h==0 || bounce<=0 || bounce==1 || window>h/2) return -1;
     let count=0;
     while(h>window){
       count++;
