@@ -10,3 +10,10 @@ function remove (string) {
     }
     return arr2.join(' ');
 }
+//remove("Hi!") === ""
+//remove("Hi! Hi!") === ""
+//remove("Hi! Hi! Hi!") === ""
+//remove("Hi Hi! Hi!") === "Hi"
+//remove("Hi! !Hi Hi!") === ""
+//remove("Hi! Hi!! Hi!") === "Hi!!"
+//remove("Hi! !Hi! Hi!") === "!Hi!"
