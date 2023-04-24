@@ -10,3 +10,6 @@ function sumFactorial(arr){
     return sum;
 }
 console.log(sumFactorial([5,4]))
+
+//assert.strictEqual(sumFactorial([4,6]), 744);
+//assert.strictEqual(sumFactorial([5,4,1]), 145);
