@@ -31,3 +31,9 @@ console.log(formatWords(['one', 'two', '']))
 console.log(formatWords([]))
 console.log(formatWords(null))
 console.log(formatWords(['']))
+
+//short solution
+function formatWords(words){
+    if (!words) return "";
+    return words.filter(function(a) { return a !== ''}).join(', ').replace(/(, )+(\S+)$/, ' and $2');
+}
