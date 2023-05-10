@@ -10,3 +10,14 @@ function validParentheses(parenStr) {
     if(right==left){return true}else{return false};
 }
 
+//runTest(true, "()");
+//runTest(true, "((()))");
+//runTest(true, "()()()");
+//runTest(true, "(()())()");
+//runTest(true, "()(())((()))(())()");
+//runTest(false, ")(");
+//runTest(false, "()()(");
+//runTest(false, "((())");
+//runTest(false, "())(()");
+//runTest(false, ")()");
+//runTest(false, ")");
